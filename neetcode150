@@ -6,12 +6,12 @@ Hello! This is where I copy down Neetcode solutions to better understand questio
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        hashset = set()
+        hashset = set() #having a hashset wont allow dups
 
-        for n in nums:
-            if n in hashset:
+        for n in nums:                 #iterate thru all the nums
+            if n in hashset:                 #when iterating if n is already in HashSet, return true
                 return True
-            hashset.add(n)
+            hashset.add(n)                    #if it isn't in the HashSet, add it to the HashSet
         return False
 
 2. Valid Anagrams?
